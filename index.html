@@ -19,6 +19,7 @@
       width: 100%;
       height: 100%;
       max-width: 600px;
+      touch-action: pan-y pinch-zoom;
     }
   </style>
 </head>
@@ -26,12 +27,14 @@
   <model-viewer
     src="stultayyor.glb"
     ios-src="stultayyor.usdz"
-    alt="akmal akani stuli"
+    alt="Akmal akani stuli"
     ar
     ar-modes="scene-viewer quick-look webxr"
     auto-rotate
     camera-controls
-    orientation="0deg 0deg 0deg"
+    interaction-prompt="when-focused"
+    scale="1 1 1"
+    ar-scale="auto"
     shadow-intensity="1"
     exposure="1"
     environment-image="neutral">
